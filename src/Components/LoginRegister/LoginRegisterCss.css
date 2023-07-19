@@ -1,0 +1,111 @@
+/* LOGIN AND REGISTER PAGE CSS */
+
+
+
+#login-form,#register-form{
+    padding: 2rem;
+}
+#login-form h2,#register-form h2{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+#register-form h2{
+    font-size: 1.8rem;
+}
+
+#register-form-tagline{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+label{
+    font-weight: 900;
+}
+
+input[type=email],input[type=password],input[type=text],input[type=tel]{
+    width: 20rem;
+    height: 2.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+#show-hide-login-page{
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    top: 15.3rem;
+    left: 17rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+    border: none;
+}
+
+#show-hide-register-page{
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    top: 32.8rem;
+    left: 17rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+    border: none;
+}
+
+input[type=checkbox]{
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+    accent-color: #f2f2f2;
+}
+
+#agreement-clause{
+    margin-left: 1.7rem;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: rgb(92, 92, 92);
+}
+
+#agreement-clause a{
+    text-decoration: none;
+    color: #1769c2;
+}
+
+#login-btn,#register-btn{
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: #FFD814;
+    border: 2px solid #FCD200;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#login-form p,#register-form p:last-child{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+#login-form span,#register-page span{
+    font-weight: 900;
+    color: #1769c2;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}

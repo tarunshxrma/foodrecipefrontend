@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+
+/*  NAVBAR CSS  */
+
+
+#navbar{
+    width: 100%;
+    background-color: black;
+    padding: 0.7rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar-heading-link{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+#navbar-heading-dot{
+    color: rgb(244, 207, 53);
+}
+
+#navbar-recipes-categories{
+    color: white;
+    font-weight: 900;
+    margin : 0 0 0 -5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-recipes-categories-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar-recipes-categories-dropdown-button{
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid transparent;
+    background-color: transparent;
+}
+
+.navbar-recipes-categories-dropdown-button:hover{
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid aquamarine;
+    cursor: pointer;
+}
+
+.navbar-recipes-categories-dropdown-content {
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 1rem;
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.navbar-recipes-categories-dropdown-links {
+    float: none;
+    color: white;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar-recipes-categories-dropdown-links:hover {
+    color: aquamarine;
+}
+
+.navbar-recipes-categories-dropdown:hover .navbar-recipes-categories-dropdown-content {
+    display: block;
+}
+
+#navbar-search-saved-profile-icons{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+#navbar-search-saved-profile-icons img:hover{
+    filter: invert(40%);
+}
+
+
+
+
+/* NAVBAR PROFILE ICON AFTER LOGIN CSS */
+
+
+
+
+.navbar-logged-in-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar-logged-in-dropdown-button {
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid transparent;
+    background-color: transparent;
+}
+
+.navbar-logged-in-dropdown-button:hover {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid aquamarine;
+    cursor: pointer;
+}
+
+.navbar-logged-in-dropdown-content {
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 1rem;
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.navbar-logged-in-dropdown-links {
+    float: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar-logged-in-dropdown-links:hover {
+    color: aquamarine;
+}
+
+.navbar-logged-in-dropdown:hover .navbar-logged-in-dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+/* LOGIN REGISTER POPUP CSS */
+
+
+
+
+.navbar-login-register-close-btn{
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 1rem 0 0 20.5rem;
+}
+
+.navbar-login-register-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar-login-register-overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.navbar-login-register-popup-content-for-login {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 3px;
+    z-index: 3;
+}
+
+.navbar-login-register-popup-content-for-register {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 3px;
+    height: 35rem;
+    overflow-y: scroll;
+    z-index: 3;
+}
+
+
+
+
+
+/* HOME PAGE CSS */
+
+
+
+
+#home-page{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#home-page-container{
+    width: 90%;
+}
+
+#home-page-banner-image1-container{
+    width: 100%;
+    height: 39.7rem;
+    z-index: 1;
+    box-shadow: inset 230px 0px 600px #000000;
+    margin-bottom: 2rem;
+}
+
+#home-page-banner-image1{
+    width: 100%;
+    height: 39.7rem;
+    position: relative;
+    z-index: -1;
+}
+
+#home-page-banner-image1-text-and-button{
+    position: absolute;
+    top: 23rem;
+    left: 11rem;
+}
+
+#home-page-banner-image1-text-and-button h2{
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+#home-page-banner-image1-text-and-button button{
+    width: 12rem;
+    height: 3.3rem;
+    background-color: #f5ce35;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#home-page-container hr{
+    height: 2rem;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    margin-bottom: 2rem;
+}
+
+
+#home-page-fresh-from-our-community h2{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+#home-page-fresh-from-our-community-cards-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.home-page-fresh-from-our-community-cards{
+    width: 22rem;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 0.2rem;
+    padding: 1rem;
+}
+
+.home-page-fresh-from-our-community-cards-image-text{
+    display: flex;
+    gap: 1rem;
+}
+
+#home-page-fresh-from-our-community-cards-container img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.home-page-fresh-from-our-community-cards-image-text{
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.home-page-fresh-from-our-community-cards-time-reply{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-page-fresh-from-our-community-cards-time-reply p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+}
+
+.home-page-fresh-from-our-community-cards-review{
+    margin-bottom: 15rem;
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+}
+
+#home-page-fresh-from-our-community-cards-container img:nth-child(2) {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 0.2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-page-fresh-from-our-community-cards-time-reply-heart{
+    color: rgb(139, 0, 0);
+    padding-top: 0.1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+#home-page-what-were-craving h2{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+#home-page-what-were-craving-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.home-page-what-were-craving-image-container{
+    width: 22rem;
+    height: 22rem;
+    z-index: 1;
+    box-shadow: inset 0px -100px 110px #000000;
+    cursor: pointer;
+}
+
+#home-page-what-were-craving-container img{
+    width: 22rem;
+    height: 22rem;
+    z-index: -1;
+    position: relative;
+}
+
+.home-page-what-were-craving-image-text{
+    position: absolute;
+    top: 10rem;
+}
+
+#home-page-what-were-craving-container h5{
+    position: absolute;
+    top: 15.5rem;
+    margin-left: 1rem;
+    font-weight: 900;
+    color: white;
+}
+
+#home-page-what-were-craving-container h3{
+    position: absolute;
+    top: 17rem;
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: white;
+}
+
+#home-page-explore-more h2{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-explore-more-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#home-page-explore-more-container img{
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#home-page-trending-now h2{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-trending-now-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#home-page-trending-now-container img{
+    width: 16.9rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-trending-now-container div{
+    width: 17rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 0.2rem;
+}
+
+#home-page-dont-miss h2{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-dont-miss-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative
+}
+
+#home-page-dont-miss-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.home-page-dont-miss-image-container{
+    width: 22rem;
+    height: 22rem;
+    z-index: 1;
+    box-shadow: inset 0px -100px 110px #000000;
+    cursor: pointer;
+}
+
+#home-page-dont-miss-container img{
+    width: 22rem;
+    height: 22rem;
+    z-index: -1;
+    position: relative;
+}
+
+#home-page-dont-miss-container h5{
+    position: absolute;
+    top: 15.5rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+#home-page-dont-miss-container h3{
+    position: absolute;
+    top: 17rem;
+    color: white;
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+#home-page-more-ideas h2{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-more-ideas-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#home-page-more-ideas-container img{
+    width: 16.9rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-more-ideas-container div{
+    width: 17rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 0.2rem;
+}
+
+#home-page-banner-image2-container{
+    display: flex;
+    gap: 4rem;
+    border: 1px solid rgb(240,240,240);
+    border-radius: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-banner-image2-container img{
+    width: 45rem;
+}
+
+#home-page-banner-image2-container h5{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-banner-image2-container h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-fan-favourites h2{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-fan-favourites-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#home-page-fan-favourites-container img{
+    width: 16.9rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-fan-favourites-container div{
+    width: 17rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* FOOTER CSS */
+
+
+
+
+#footer{
+    width: 100%;
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#footer-social-icons{
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#footer-facebook-icon:hover{
+    color: rgb(46, 46, 255);
+}
+#footer-instagram-icon:hover{
+    color: purple;
+}
+#footer-pinterest-icon:hover{
+    color: rgb(207, 11, 11);
+}
+#footer-twitter-icon:hover{
+    color: rgb(18, 121, 206);
+}
+#footer-youtube-icon:hover{
+    color: red;
+}
+#footer-mail-icon:hover{
+    color: gray;
+}
+
+#footer-social-icons a{
+    text-decoration: none;
+    color: white;
+}
+
+#back-to-top{
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#back-to-top span{
+    font-size: 1rem;
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
+}
+
+#footer-nav-links-left-part{
+    margin: 3rem 0 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#footer-nav-links-left-part a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer-right-part{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right-part-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.footer-right-part-dropdown-button {
+    color: white;
+    cursor: pointer;
+}
+
+.footer-right-part-dropdown-content {
+    position: absolute;
+    top: -10.8rem;
+    left: 66rem;
+    width: 15rem;
+    height: fit-content;
+    display: none;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.footer-right-part-dropdown-links {
+    float: none;
+    color: black;
+    font-weight: 600;
+    padding: 7px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.footer-right-part-dropdown:hover .footer-right-part-dropdown-content {
+    display: block;
+}
+
+#footer-right-part p:last-child{
+    color: rgb(139, 139, 139);
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#footer-nav-links-right-part{
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+#footer-nav-links-right-part a{
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+}
+
+
+
+/* I WANT TO MAKE SEARCH */
+
+
+
+#i-want-to-make{
+    background: linear-gradient(to right, #ff0099, #493240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+#i-want-to-make-search-bar-and-text-container{
+    width: 69%;
+    background-color: white;
+    padding: 0.8rem;
+    margin-left: 7.6rem;
+}
+
+#i-want-to-make-search-bar-and-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.3rem solid purple;
+}
+
+#i-want-to-make-search-bar-and-text h3{
+    margin-right: 1rem;
+}
+
+#i-want-to-make-search-bar{
+    display: flex;
+    align-items: center;
+}
+
+#i-want-to-make-search-bar input[type=search]{
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    margin-left: 0.3rem;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+#i-want-to-make-suggested{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#i-want-to-make-suggested-container{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#i-want-to-make-suggested-container div{
+    background-color: aquamarine;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+#i-want-to-make-suggested-container div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+
+
+
+/* FIND MORE RECIPES CSS */
+
+
+
+#find-more-recipes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#find-more-recipes h2{
+    margin-bottom: 2rem;
+}
+
+#find-more-recipes-search-bar input[type=search]{
+    width: 55rem;
+    height: 2.5rem;
+    border: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 900;
+    outline: none;
+}
+
+#find-more-recipes-search-bar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.2rem 1rem;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 2rem;
+}
+
+#find-more-recipes-container button{
+    margin-top: 3rem;
+    width: 18rem;
+    height: 2.5rem;
+    background-color: #f5ce35;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+
+
+
+/* PAGE NOT FOUND CSS */
+
+
+
+.error {
+    font-size: 500px;
+    font-weight: 900;
+    color: gainsboro;
+    position: absolute;
+    top: -80px;
+    left: 250px;
+    z-index: -1;
+}
+
+.page-not-found {
+    color: gray;
+    font-size: 95px;
+    font-weight: 900;
+    position: absolute;
+    top: 230px;
+    left: 323px;
+}

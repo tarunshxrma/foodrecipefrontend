@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+
+/* SEARCH PAGE */
+
+
+#search-page{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search-page-i-want-to-make{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#search-page-i-want-to-make-container{
+    background-color: white;
+    padding: 0.7rem 1rem;
+}
+
+#search-page-i-want-to-make-search-bar-and-text{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid purple;
+}
+
+#search-page-i-want-to-make-search-bar-and-text h3{
+    margin-right: 0.5rem;
+}
+#search-page-i-want-to-make-container input[type=search]{
+    width: 45rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+#search-page-i-want-to-make-search-bar{
+    display: flex;
+    align-items: center;
+}
+
+#search-page-your-recent-searches{
+    color: white;
+    width: 69%;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-weight: 900;
+}
+
+
+
+
+
+/* SAVED PAGE CSS */
+
+
+
+#saved-page-header{
+    text-align: center;
+    background-color: black;
+    padding-bottom: 1rem;
+}
+
+#saved-page-header h2{
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+#saved-page-recipes-my-boards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem 0 0 0;
+}
+
+#saved-page-recipes-my-boards a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 0 3rem 1rem 3rem;
+}
+
+.active{
+    border-bottom: 7px solid purple;
+}
+
+
+
+/* SAVED PAGE RECIPES CSS */
+
+
+
+#saved-page-recipes{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#discover-recipes-card{
+    background-color: white;
+    text-align: center;
+    width: 18%;
+    padding: 7rem 0 2rem 0;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+#saved-page-recipes-plus-icon{
+    color: purple;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#discover-recipes-card h3{
+    color: purple;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+#discover-recipes-card p{
+    margin-bottom: 1rem;
+}
+
+#discover-recipes-card a{
+    text-decoration: none;
+    color: purple;
+    font-weight: 900;
+}
+
+#discover-recipes-card a:hover{
+    border-bottom: 1px solid purple;
+}
+
+#added-recipes-card{
+    background-color: white;
+    text-align: left;
+    width: 13.5rem;
+    height: 20.75rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    border-bottom: 4px solid aquamarine;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#added-recipes-card img:first-child{
+    width: 13.5rem;
+    height: 10rem;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+#added-recipes-card img:nth-child(2){
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 7.5rem;
+    left: 1rem;
+}
+
+#added-recipes-card h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+
+#added-recipes-card p{
+    margin-left: 1.5rem;
+}
+
+
+
+
+
+/* SAVED PAGE MY BOARDS CSS */
+
+
+
+#saved-page-my-boards {
+    background-color: rgb(238, 238, 238);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-board-card {
+    background-color: white;
+    text-align: center;
+    width: 18%;
+    padding: 7rem 0 2rem 0;
+    cursor: pointer;
+}
+
+#saved-page-my-boards-plus-icon {
+    color: purple;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#new-board-card h3 {
+    color: purple;
+    font-weight: 900;
+    margin-bottom: 7rem;
+}
+
+
+
+
+
+/* USER PROFILE PAGE CSS */
+
+
+
+
+#user-profile-page{
+    background-color: rgb(238,238,238);
+    padding-bottom: 5rem;
+}
+
+#user-profile-page-gradient{
+    height: 13rem;
+    background: linear-gradient(to right, #89216b, #da4453);
+    position: relative;
+}
+
+#user-profile-page-profile-photo-followers-following{
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+}
+
+#user-profile-page-profile-photo{
+    width: 12.6rem;
+    height: 12.6rem;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+#user-profile-page-followers-following{
+    display: flex;
+    text-align: center;
+}
+
+#user-profile-page-followers-following div{
+    padding: 0.3rem 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#user-profile-page-followers-following div:hover{
+    background-color: white;
+}
+
+#user-profile-page-followers-following p:nth-child(n+1) {
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+#user-profile-page-followers-following p:nth-child(n+2){
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+#user-profile-page-username p{
+    font-size: 1.2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 19rem;
+    left: 29rem;
+}
+
+#user-profile-page-filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+#user-profile-page-filters-container{
+    width: 70%;
+    display: flex;
+    gap: 5rem;
+    background-color: white;
+    padding: 2rem;
+}
+
+#user-profile-page-filters-container div{
+    display: flex;
+    flex-direction: column;
+}
+
+#user-profile-page-filters-container p{
+    margin-bottom: 2rem;
+    color: gray;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+#user-profile-page-filters-container a{
+    text-decoration: none;
+    color: black;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+#user-profile-page-filters-container .active{
+    color: purple;
+    font-weight: 900;
+}
+
+
+
+
+/* ADD YOUR OWN RECIPE PAGE CSS */
+
+
+
+#add-your-own-recipe-page{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-your-own-recipe-page-container{
+    width: 70%;
+}
+
+#add-your-own-recipe-page h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#add-your-own-recipe-page form{
+    display: flex;
+    flex-direction: column;
+}
+
+#add-your-own-recipe-page input[type=text]{
+    background-color: white;
+    width: 50rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid gray;
+}
+
+#add-your-own-recipe-page textarea{
+    background-color: white;
+    width: 50rem;
+    height: 10rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    margin-bottom: 3rem;
+}
+
+#add-your-own-recipe-page h3{
+    font-size: 1.7rem;
+}
+
+#add-your-own-recipe-page hr{
+    width: 50rem;
+    height: 0.2rem;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+#add-your-own-recipe-page p{
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+#add-your-own-recipe-page a{
+    font-weight: 900;
+    text-decoration: none;
+    color: purple;
+} 
+
+#add-your-own-recipe-page a:hover{
+    border-bottom: 1px solid purple;
+} 
+
+#add-your-own-recipe-page h4{
+    font-size: 1.4rem;
+}
+
+#add-your-own-recipe-page input[type=radio]{
+    accent-color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+#add-your-own-recipe-page input[type=radio]:nth-child(3){
+    margin-left: 4rem;
+}
+
+#add-your-own-recipe-page label{
+    margin-left: 0.5rem;
+}
+
+#add-your-own-recipe-page-submit-btn-cancel-text{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#add-your-own-recipe-page-submit-btn-cancel-text div{
+    display: flex;
+    gap: 1rem;
+}
+
+#add-your-own-recipe-page-submit-btn-cancel-text p:nth-child(2){
+    font-weight: 900;
+    color: purple;
+    cursor: pointer;
+}
+
+#add-your-own-recipe-page button{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    background-color: #f5ce35;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#add-your-own-recipe-page-photo-timings{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+#add-your-own-recipe-page-photo{
+    width: 20rem;
+    height: 15rem;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, #89216b, #da4453);
+    cursor: pointer;
+}
+
+#add-your-own-recipe-page-photo-make-it-shine-camera-icon-one{
+    margin-top: 3rem;
+}
+
+#add-your-own-recipe-page-photo-make-it-shine-camera-icon-one p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#add-your-own-recipe-page-photo-camera-icon-one{
+    font-size: 4rem;
+    color: white;
+}
+
+#add-your-own-recipe-page-photo-recipe-image{
+    width: 19.9rem;
+    height: 12.2rem;
+}
+
+#add-your-own-recipe-page-photo input[type=file]{
+    display: none;
+}
+
+#add-your-own-recipe-page-photo-add-your-photo-btn{
+    width: 20rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 12.2rem;
+    left: -0.5rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+#add-your-own-recipe-page-photo-camera-icon-two{
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.4rem;
+    left: -0.2rem;
+}
+
+#add-your-own-recipe-page-photo label{
+    padding: 0.3rem;
+}
+
+#add-your-own-recipe-page-photo-add-your-photo-btn:hover{
+    background-color: aqua;
+}
+
+#add-your-own-recipe-page-timings input[type=text]{
+    width: 5rem;
+    margin-top: 0.5rem;
+}
+
+#add-your-own-recipe-page-timings select{
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: purple;
+}
+
+
+
+
+
+/* RECIPE CATEGORIES PAGE 1 CSS */
+
+
+
+
+#recipe-categories-page-one {
+    background-color: rgb(243, 243, 243);
+}
+
+#recipe-categories-page-one-heading-descriptiontext-container {
+    width: 100%;
+    background-color: white;
+    padding: 1rem 20rem 1rem 10rem;
+}
+
+#recipe-categories-page-one-heading {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+#recipe-categories-page-one-descriptiontext {
+    margin-top: 1rem;
+}
+
+#recipe-categories-page-one-social-icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+#recipe-categories-page-one-social-icons img:hover {
+    filter: saturate(3);
+}
+
+#recipe-categories-page-recipes-container{
+    display: flex;
+    justify-content: center;
+}
+
+#recipe-categories-page-recipes{
+    width: 35rem;
+    margin-bottom: 12rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+#recipe-categories-page-recipes img{
+    width: 35rem;
+    height: 20rem;
+}
+
+#recipe-categories-page-text{
+    background-color: white;
+    width: 30rem;
+    padding: 2rem;
+    position: absolute;
+    top: 15rem;
+    left: 2.5rem;
+    border-bottom: 3px solid aquamarine;
+}
+
+#recipe-categories-page-text h5{
+    margin-bottom: 0.5rem;
+}
+
+#recipe-categories-page-text p{
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* ALL CATEGORIES CSS */
+
+
+
+#all-categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#all-categories-container{
+    width: 70%;
+    padding: 3rem 0;
+    text-align: left;
+}
+
+#all-categories-container a{
+    text-decoration: none;
+}
+
+#all-categories-container a:hover{
+    border-bottom: 1px solid purple;
+}
+
+#all-categories-container p:first-child{
+    color: purple;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+#all-categories-container h2{
+    margin-bottom: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+#all-categories-letters span{
+    font-size: 1.5rem; 
+    font-weight: 900;   
+    cursor: pointer;
+    border-bottom: 5px solid purple;
+}
+
+#all-categories-letters a{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5rem; 
+    font-weight: 900; 
+    margin-left: 1rem;
+    line-height: 3rem;
+}
+
+#all-categories-letters a:hover{
+    color: purple;
+}
+
+#all-categories-letters{
+    margin-bottom: 1.5rem;
+}
+
+#all-catgories-quick-links-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#all-catgories-quick-links-container a{
+    text-decoration: none;
+    color: purple;
+    font-weight: 900;
+}
+
+
+
+
+
+
+/* SITE MAP CSS */
+
+
+
+
+#site-map-heading {
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    margin-top: 2rem;
+    margin-left: 8.3rem;
+}
+
+#site-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#site-map-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#site-map-container div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#site-map-container h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#site-map-container div a {
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(90, 6, 90);
+    border-bottom: 2px dotted purple;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ABOUT PAGE CSS */
+
+
+
+#about-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+#about-page-container{
+    width: 72%;
+    text-align: left;
+    line-height: 1.6rem;
+}
+
+#about-page-container h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+#about-page-food-logo-by-team-food{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#about-page-food-logo-by-team-food-left-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-page-food-logo-left-part{
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(to bottom, #ff0099, #493240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-page-food-logo-left-part h3{
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+}
+
+#about-page-food-logo-left-part span{
+    color: rgb(244, 207, 53);
+}
+
+#about-page-by-team-food-left-part{
+    margin-left: 0.7rem;
+}
+
+#about-page-by-team-food-left-part p{
+    font-weight: 900;
+}
+
+#about-page-by-team-food-left-part span{
+    color: purple;
+    cursor: pointer;
+}
+#about-page-by-team-food-left-part span:hover{
+    border-bottom: 1px solid purple;
+}
+
+#about-page-food-logo-by-team-food-right-part{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+#about-page-food-logo-by-team-food-right-part img:hover{
+    filter: saturate(3);
+}
+
+#about-page-description p{
+    margin-top: 1rem;
+    color: black;
+}
+
+#about-page-description p:nth-child(2),#about-page-description p:nth-child(4){
+    margin-bottom: 1rem;
+}
+
+#about-page-description span{
+    font-weight: 900;
+}
+
+#about-page-description p span{
+    color: purple;
+    cursor: pointer;
+}
+
+#about-page-description p span:hover{
+    border-bottom: 1px solid purple;
+}
+
+#about-page-about-team-food{
+    width: 66%;
+    margin-top: 3rem;
+}
+
+#about-page-about-team-food h3{
+    margin-bottom: 0.6rem;
+}
+
+#about-page-about-team-food hr{
+    border: 1px dotted black;
+}
+
+#about-page-about-team-food-logo-and-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#about-page-about-team-food-logo{
+    height: 7rem;
+    width: 7rem;
+    background: linear-gradient(to bottom, #ff0099, #493240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about-page-about-team-food-logo h3{
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+#about-page-about-team-food-logo span{
+    color: rgb(244, 207, 53);
+}
+
+#about-page-about-team-food-logo-and-description p{
+    margin-left: 1.5rem;
+}
+
+
+
+

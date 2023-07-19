@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Components/MainComponents/Home'
+import PageNotFound from './Components/MainComponents/PageNotFound'
+import SearchPage from './Components/RedirectedPages/SearchPage'
+import RecipesCategoriesPage1 from './Components/RedirectedPages/RecipesCategoriesPage1'
+import LoginPage from './Components/LoginRegister/LoginPage'
+import RegisterPage from './Components/LoginRegister/RegisterPage'
+import UserProfilePage from './Components/RedirectedPages/UserProfilePage'
+import UserSettingsPage from './Components/RedirectedPages/UserSettingsPage'
+import AllCategoriesPage from './Components/RedirectedPages/AllCategoriesPage'
+import SiteMapPage from './Components/RedirectedPages/SiteMapPage'
+import AboutUsPage from './Components/RedirectedPages/AboutUsPage'
+import ScrollToTop from './Components/MainComponents/ScrollToTop'
+import SavedPageRecipes from './Components/RedirectedPages/SavedPageRecipes'
+import SavedPageMyBoard from './Components/RedirectedPages/SavedPageMyBoard'
+import AddYourOwnRecipePage from './Components/RedirectedPages/AddYourOwnRecipePage'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/recipes/:recipename' element={<RecipesCategoriesPage1 />}></Route>
+        <Route path='/search' element={<SearchPage />}></Route>
+        <Route path='/login' element={<LoginPage />}></Route>
+        <Route path='/register' element={<RegisterPage />}></Route>
+        <Route path='/userprofile/:filtername' element={<UserProfilePage />}></Route>
+        <Route path='/addyourownrecipe' element={<AddYourOwnRecipePage />}></Route>
+        <Route path='/usersettings' element={<UserSettingsPage />}></Route>
+        <Route path='/allcategories' element={<AllCategoriesPage />}></Route>
+        <Route path='/sitemap' element={<SiteMapPage />}></Route>
+        <Route path='/aboutus' element={<AboutUsPage />}></Route>
+        <Route path='/saved/recipes' element={<SavedPageRecipes />}></Route>
+        <Route path='/saved/myboards' element={<SavedPageMyBoard />}></Route>
+
+
+
+
+
+
+        <Route path="*" element={<PageNotFound />}></Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
