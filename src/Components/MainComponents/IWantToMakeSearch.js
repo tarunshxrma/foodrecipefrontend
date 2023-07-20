@@ -2,8 +2,22 @@ import React from 'react'
 import './MainComponentsCss.css'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { useState } from 'react'
 
 const IWantToMakeSearch = () => {
+    const [search, setSearch] = useState('')
+    const [data, setData] = useState([])
+
+    const APP_ID = 'e95f07ed'
+    const APP_KEY = 'a26cf3b8f2504e6eb9e9db8524fe4a27'
+
+    const getSearchRecipes = (searchQuery) => {
+        axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`)
+            .then((response) => setData(response.data.hits))
+            .catch((error) => console.log("Error", error))
+        console.log(data)
+    }
     return (
         <>
             <div id='i-want-to-make'>
@@ -14,7 +28,8 @@ const IWantToMakeSearch = () => {
                                 <h3>I WANT TO MAKE</h3>
                                 <div id='i-want-to-make-search-bar'>
                                     <AiOutlineSearch />
-                                    <input type='search' placeholder='Search here or try our suggestions below'></input>
+                                    <input type='search' placeholder='Search here or try our suggestions below' value={search} onChange={(e) => setSearch(e.target.value)}></input>
+                                    <button onClick={() => getSearchRecipes(search)}>search</button>
                                 </div>
                             </div>
                         </div>
@@ -30,6 +45,16 @@ const IWantToMakeSearch = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                {
+                    data.map((element, index) => (
+                        <div>
+                            <img src={element.recipe.image} alt=''></img>
+                            <h3>{element.recipe.label}</h3>
+                        </div>
+                    ))
+                }
             </div>
         </>
     )

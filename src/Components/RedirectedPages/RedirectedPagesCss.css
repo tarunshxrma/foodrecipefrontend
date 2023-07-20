@@ -722,6 +722,20 @@
     margin-bottom: 2rem;
 }
 
+#recipe-categories-description-page-reviews-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#recipe-categories-description-page-reviews-header-write-review h3{
+    cursor: pointer;
+    background-color: #f5ce35;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15rem;
+}
+
 #recipe-categories-description-page-reviews-text{
     border: 1px solid gainsboro;
     padding: 2rem;

@@ -9,6 +9,7 @@ import { TfiDownload } from 'react-icons/tfi'
 import { BsPrinter } from 'react-icons/bs'
 import { BsArrow90DegRight } from 'react-icons/bs'
 import { BsCamera } from 'react-icons/bs'
+import { MdEditNote } from 'react-icons/md'
 import Footer from '../MainComponents/Footer'
 import FindMoreRecipes from '../MainComponents/FindMoreRecipes'
 
@@ -52,10 +53,10 @@ const RecipeCategoriesDescriptionPage = ({ saveRecipe }) => {
                             <h3>INGREDIENTS</h3>
                             {element.recipe.ingredientLines.map((item) => (<p>{item}</p>))}
                             <div id='recipe-categories-description-page-reviews'>
-                                <div>
+                                <div id='recipe-categories-description-page-reviews-header'>
                                     <h3>REVIEWS</h3>
-                                    <div>
-
+                                    <div id='recipe-categories-description-page-reviews-header-write-review'>
+                                        <h3><MdEditNote /> WRITE A REVIEW</h3>
                                     </div>
                                 </div>
                                 <div id='recipe-categories-description-page-reviews-text'><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5></div>
