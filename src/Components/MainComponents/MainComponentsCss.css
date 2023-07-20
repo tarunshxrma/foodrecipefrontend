@@ -36,6 +36,10 @@ h1{
     gap: 2rem;
 }
 
+#mobile-menu-icon{
+    display: none;
+}
+
 .navbar-recipes-categories-dropdown {
     float: left;
     overflow: hidden;
@@ -400,6 +404,11 @@ h1{
     justify-content: space-between;
     text-align: center;
     margin-bottom: 4rem;
+}
+
+#home-page-explore-more-container a{
+    text-decoration: none;
+    color: black;
 }
 
 #home-page-explore-more-container img{
@@ -834,4 +843,552 @@ h1{
     position: absolute;
     top: 230px;
     left: 323px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+
+#navbar{
+    width: 300%;
+    height: 15rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 10rem;
+    margin-left: 13rem;
+}
+
+#navbar-recipes-categories {
+    display: none;
+}
+
+#navbar-search-saved-profile-icons{
+    gap: 2.5rem;
+}
+
+#navbar-search-saved-profile-icons img{
+    width: 6rem;
+}
+
+#nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: 15rem;
+    background-color: #000000;
+    width: 77.2rem;
+    height: 160rem;
+    z-index: 2;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#mobile-menu-icon {
+    display: flex;
+    font-size: 8rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 3rem;
+    border: none;
+    background-color: #000000;
+    color: white;
+}
+
+.navbar-recipes-categories-dropdown{
+    padding: 7rem;
+    border-bottom: 1px solid white;
+}
+
+#home-page {
+    width: 300%;
+}
+
+#home-page-banner-image1-container {
+    height: 50rem;
+}
+
+#home-page-banner-image1 {
+    height: 50rem;
+}
+
+#home-page-banner-image1-text-and-button {
+    top: 33rem;
+    left: 13rem;
+}
+
+#home-page-banner-image1-text-and-button h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-banner-image1-text-and-button button {
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.7rem;
+}
+
+#home-page-container hr {
+    margin-bottom: 5rem;
+}
+
+#home-page-fresh-from-our-community h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-fresh-from-our-community-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-bottom: 5rem;
+}
+
+.home-page-fresh-from-our-community-cards {
+    width: 63rem;
+    height: 50rem;
+    border: 5px solid rgb(228, 228, 228);
+    padding: 3rem;
+}
+
+.home-page-fresh-from-our-community-cards-image-text {
+    gap: 1rem;
+}
+
+#home-page-fresh-from-our-community-cards-container img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.home-page-fresh-from-our-community-cards-image-text {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.home-page-fresh-from-our-community-cards-time-reply p {
+    font-size: 3.5rem;
+}
+
+.home-page-fresh-from-our-community-cards-review {
+    font-size: 3rem;
+}
+
+#home-page-fresh-from-our-community-cards-container img:nth-child(2) {
+    width: 55rem;
+    height: 25rem;
+    border-radius: 0.2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-page-fresh-from-our-community-cards-time-reply-heart {
+    color: rgb(139, 0, 0);
+    padding-top: 0.1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+#home-page-what-were-craving h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-what-were-craving-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.home-page-what-were-craving-image-container {
+    width: 20rem;
+    height: 20rem;
+    z-index: 1;
+    box-shadow: inset 0px -100px 110px #000000;
+    cursor: pointer;
+}
+
+#home-page-what-were-craving-container img {
+    width: 20rem;
+    height: 20rem;
+    z-index: -1;
+    position: relative;
+}
+
+.home-page-what-were-craving-image-text {
+    position: absolute;
+    top: 10rem;
+}
+
+#home-page-what-were-craving-container h5 {
+    position: absolute;
+    top: 12rem;
+    font-size: 1.5rem;
+}
+
+#home-page-what-were-craving-container h3 {
+    position: absolute;
+    top: 14.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+#home-page-explore-more h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-explore-more-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+#home-page-explore-more-container img {
+    width: 40rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-explore-more-container h4{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-trending-now h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-trending-now-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    gap: 5rem;
+}
+
+#home-page-trending-now-container img {
+    width: 63rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-trending-now-container div {
+    width: 63rem;
+    font-size: 4rem;
+}
+
+#home-page-dont-miss{
+    margin-bottom: 5rem;
+}
+
+#home-page-dont-miss h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.home-page-dont-miss-image-container {
+    width: 20rem;
+    height: 20rem;
+}
+
+#home-page-dont-miss-container img {
+    width: 20rem;
+    height: 20rem;
+}
+
+#home-page-dont-miss-container h5 {
+    position: absolute;
+    top: 12rem;
+    font-size: 1.5rem;
+}
+
+#home-page-dont-miss-container h3 {
+    position: absolute;
+    top: 14.5rem;
+    font-size: 2rem;
+}
+
+#home-page-more-ideas h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-more-ideas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-more-ideas-container img {
+    width: 63rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-more-ideas-container div {
+    width: 63rem;
+    font-size: 4rem;
+}
+
+#home-page-banner-image2-container {
+    height: 40rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-banner-image2-container img {
+    width: 43rem;
+}
+
+#home-page-banner-image2-container h5 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-banner-image2-container h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#home-page-banner-image2-container p{
+    font-size: 1.5rem;
+}
+
+#home-page-fan-favourites h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#home-page-fan-favourites-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#home-page-fan-favourites-container img {
+    width: 63rem;
+    margin-bottom: 1rem;
+}
+
+#home-page-fan-favourites-container div {
+    width: 63rem;
+    font-size: 4rem;
+}
+
+#find-more-recipes {
+    width: 300%;
+}
+
+#find-more-recipes h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#find-more-recipes-search-bar input[type=search] {
+    width: 55rem;
+    height: 4rem;
+    font-size: 3rem;
+}
+
+#find-more-recipes-search-bar {
+    padding: 2rem 3rem;
+    border: 3px solid rgb(172, 172, 172);
+    border-radius: 5rem;
+}
+
+#find-more-recipes-search-bar-search-icon{
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+#find-more-recipes-container button {
+    margin-top: 5rem;
+    width: 23rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#footer {
+    width: 300%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-social-icons {
+    font-size: 4rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+#back-to-top span {
+    font-size: 3rem;
+}
+
+#footer-nav-links-left-part {
+    font-size: 3rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+#footer-right-part {
+    text-align: left;
+}
+
+.footer-right-part-dropdown-button {
+    font-size: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+}
+
+.footer-right-part-dropdown-content {
+    display: none;
+}
+
+.footer-right-part-dropdown-links {
+    display: none;
+}
+
+#footer-right-part p:last-child {
+    font-size: 1.5rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+}
+
+#footer-nav-links-right-part {
+    margin-top: 2rem;
+    line-height: 4rem;
+    font-size: 2.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+}
+
+#i-want-to-make {
+    width: 300%;
+}
+
+#i-want-to-make-search-bar-and-text-container {
+    width: 68rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#i-want-to-make-search-bar input[type=search] {
+    width: 30rem;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+
+#i-want-to-make-suggested {
+    margin-bottom: 5rem;
+}
+
+#i-want-to-make-suggested-container {
+    width: 68rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#i-want-to-make-suggested-container div {
+    width: 15rem;
+    height: 6rem;
+    margin-right: 2rem;
+}
+
+#i-want-to-make-suggested-container div a {
+    font-size: 2rem;
+}
+
+.navbar-login-register-close-btn {
+    cursor: pointer;
+    font-size: 5rem;
+    margin: 3rem 0 0 63rem;
+}
+
+.navbar-login-register-overlay {
+    width: 300%;
+    height: 172rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar-login-register-overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.navbar-login-register-popup-content-for-login {
+    width: 70rem;
+    height: 90rem;
+    top: 45rem;
+    transform: translate(-13%, -13%);
+    background: white;
+    border-radius: 3px;
+    z-index: 3;
+}
+
+.navbar-login-register-popup-content-for-register {
+    width: 70rem;
+    height: 90rem;
+    top: 45rem;
+    transform: translate(-13%, -13%);
+}
+
+.navbar-logged-in-dropdown-content {
+    width: 35rem;
+    height: fit-content;
+    padding: 5rem 3rem;
+    top: 11rem;
+    right: 1rem;
+}
+
+
+.navbar-logged-in-dropdown-links {
+    font-size: 4rem;
+    padding: 16px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

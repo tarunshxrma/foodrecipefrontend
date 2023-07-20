@@ -8,6 +8,8 @@ import { Link, useNavigate } from "react-router-dom";
 import LoginPage from "../LoginRegister/LoginPage";
 import RegisterPage from "../LoginRegister/RegisterPage";
 import { GrFormClose } from 'react-icons/gr'
+import { RxCross2 } from 'react-icons/rx'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
     const [popup, setPopup] = useState(false);
@@ -29,6 +31,8 @@ const Navbar = () => {
         setLoginSignup(!loginSignup)
     }
 
+    const [isMobile, setIsMobile] = useState(false);
+
 
     return (
         <>
@@ -36,7 +40,10 @@ const Navbar = () => {
                 <Link to="/" id="navbar-heading-link">
                     <h1>Food<span id="navbar-heading-dot">.</span></h1>
                 </Link>
-                <div id="navbar-recipes-categories">
+                <button id='mobile-menu-icon' onClick={() => { setIsMobile(!isMobile) }}>
+                    {isMobile ? <RxCross2 /> : <GiHamburgerMenu />}
+                </button>
+                <div id={isMobile ? "nav-links-mobile" : "navbar-recipes-categories"} onClick={() => { setIsMobile(false) }}>
                     <div className="navbar-recipes-categories-dropdown">
                         <ul className="navbar-recipes-categories-dropdown-button">RECIPES</ul>
                         <div className="navbar-recipes-categories-dropdown-content">
@@ -127,7 +134,7 @@ const Navbar = () => {
                     <Link to='/saved/recipes'><img src={NavbarSavedIcon} alt="saved-icon"></img></Link>
                     {isLogged ?
                         <div className="navbar-logged-in-dropdown">
-                            <img src={NavbarLoggedInIcon} alt="profile-icon" className="navbar-logged-in--dropdown-button"></img>
+                            <img src={NavbarLoggedInIcon} alt="profile-icon"></img>
                             <div className="navbar-logged-in-dropdown-content">
                                 <Link to='/userprofile/activity' className="navbar-logged-in-dropdown-links">Profile</Link>
                                 <Link to='/addyourownrecipe' className="navbar-logged-in-dropdown-links">Add a Recipe</Link>

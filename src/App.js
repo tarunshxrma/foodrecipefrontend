@@ -15,8 +15,17 @@ import ScrollToTop from './Components/MainComponents/ScrollToTop'
 import SavedPageRecipes from './Components/RedirectedPages/SavedPageRecipes'
 import SavedPageMyBoard from './Components/RedirectedPages/SavedPageMyBoard'
 import AddYourOwnRecipePage from './Components/RedirectedPages/AddYourOwnRecipePage'
+import RecipeCategoriesDescriptionPage from './Components/RedirectedPages/RecipeCategoriesDescriptionPage'
+import { useState } from 'react'
 
 const App = () => {
+
+  const [recipe, setRecipe] = useState([]);
+  console.log(recipe)
+  const saveRecipe = (data) => {
+    setRecipe([...recipe, { ...data }])
+  }
+
   return (
     <BrowserRouter>
       <ScrollToTop />
@@ -32,8 +41,9 @@ const App = () => {
         <Route path='/allcategories' element={<AllCategoriesPage />}></Route>
         <Route path='/sitemap' element={<SiteMapPage />}></Route>
         <Route path='/aboutus' element={<AboutUsPage />}></Route>
-        <Route path='/saved/recipes' element={<SavedPageRecipes />}></Route>
+        <Route path='/saved/recipes' element={<SavedPageRecipes recipe={recipe} />}></Route>
         <Route path='/saved/myboards' element={<SavedPageMyBoard />}></Route>
+        <Route path='/recipedescription/:recipename' element={<RecipeCategoriesDescriptionPage saveRecipe={saveRecipe} />}></Route>
 
 
 

@@ -136,37 +136,37 @@ const Home = () => {
                     <div id='home-page-explore-more'>
                         <h2>EXPLORE MORE</h2>
                         <div id='home-page-explore-more-container'>
-                            <Link to=''>
+                            <Link to='/recipes/grilling and bbq'>
                                 <div>
                                     <img src={HomePageExploreMoreImage1} alt=''></img>
                                     <h4>GRILLING & BBQ</h4>
                                 </div>
                             </Link>
-                            <Link to=''>
+                            <Link to='/recipes/mexican'>
                                 <div>
                                     <img src={HomePageExploreMoreImage2} alt=''></img>
                                     <h4>INTERNATIONAL <br /> EATS</h4>
                                 </div>
                             </Link>
-                            <Link to=''>
+                            <Link to='/recipes/breakfast and brunch'>
                                 <div>
                                     <img src={HomePageExploreMoreImage3} alt=''></img>
                                     <h4>BREAKFAST & <br /> BRUNCH</h4>
                                 </div>
                             </Link>
-                            <Link to=''>
+                            <Link to='/recipes/summer'>
                                 <div>
                                     <img src={HomePageExploreMoreImage4} alt=''></img>
                                     <h4>COMMUNITY PICKS</h4>
                                 </div>
                             </Link>
-                            <Link to=''>
+                            <Link to='/recipes/bread'>
                                 <div>
                                     <img src={HomePageExploreMoreImage5} alt=''></img>
-                                    <h3>QUICK & EASY</h3>
+                                    <h4>QUICK & EASY</h4>
                                 </div>
                             </Link>
-                            <Link to=''>
+                            <Link to='/recipes/desert'>
                                 <div>
                                     <img src={HomePageExploreMoreImage6} alt=''></img>
                                     <h4>COPYCAT RECIPES</h4>

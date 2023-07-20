@@ -16,7 +16,7 @@ const SearchPage = () => {
                         <div id='search-page-i-want-to-make-search-bar-and-text'>
                             <h3>I WANT TO MAKE</h3>
                             <div id='search-page-i-want-to-make-search-bar'>
-                                <AiOutlineSearch />
+                                <AiOutlineSearch id='search-page-i-want-to-make-search-bar-search-icon' />
                                 <input type='search'></input>
                             </div>
                         </div>

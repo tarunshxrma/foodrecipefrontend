@@ -3,16 +3,20 @@ import './RedirectedPagesCss.css'
 import Navbar from '../MainComponents/Navbar'
 import Footer from '../MainComponents/Footer'
 import IWantToMakeSearch from '../MainComponents/IWantToMakeSearch'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { BsFillPlusCircleFill } from 'react-icons/bs'
 import { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
 
-const SavedPageRecipes = () => {
+const SavedPageRecipes = ({ recipe }) => {
     // const token = localStorage.getItem('recievedToken')
 
+    const navigate = useNavigate()
+
     const [data, setData] = useState([])
+
+    const [RECIPE, setRECIPE] = useState([])
 
     useEffect(() => {
         axios.get('https://food-recipe-backend-lctk.onrender.com/recipes/getyourownrecipe', {
@@ -24,6 +28,10 @@ const SavedPageRecipes = () => {
             .catch((error) => console.log("Error", error))
         console.log(data)
     }, [data])
+
+    useEffect(() => {
+        setRECIPE(recipe)
+    }, [recipe])
 
     // const email = localStorage.getItem('email')
 
@@ -40,11 +48,19 @@ const SavedPageRecipes = () => {
                 </div>
                 <div id='saved-page-recipes'>
                     <div id='discover-recipes-card'>
-                        <BsFillPlusCircleFill id='saved-page-recipes-plus-icon' />
-                        <h3>DISCOVER <br /> RECIPES</h3>
+                        <BsFillPlusCircleFill id='saved-page-recipes-plus-icon' onClick={() => navigate('/')} />
+                        <h3 onClick={() => navigate('/')}>DISCOVER <br /> RECIPES</h3>
                         <p>..... or .....</p>
                         <Link to='/addyourownrecipe'>Add Your Own Recipe</Link>
                     </div>
+                    {
+                        RECIPE.map((element, index) => (
+                            <div id='saved-page-added-from-recipes'>
+                                <img src={element.recipe.image} alt=''></img>
+                                <h3>{element.recipe.label}</h3>
+                            </div>
+                        ))
+                    }
                     {
                         data && data.map((element, index) => (
                             <div id='added-recipes-card'>

@@ -151,6 +151,25 @@
     border-bottom: 1px solid purple;
 }
 
+#saved-page-added-from-recipes{
+    width: 18%;
+    height: 21rem;
+    background-color: white;
+    border-bottom: 4px solid aquamarine;
+    margin-left: 2rem;
+}
+
+#saved-page-added-from-recipes h3{
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+
+#saved-page-added-from-recipes img{
+    width: 13.45rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+
 #added-recipes-card{
     background-color: white;
     text-align: left;
@@ -158,9 +177,9 @@
     height: 20.75rem;
     cursor: pointer;
     margin-right: 2rem;
+    margin-left: 2rem;
     border-bottom: 4px solid aquamarine;
     position: relative;
-    margin-bottom: 2rem;
 }
 
 #added-recipes-card img:first-child{
@@ -591,6 +610,11 @@
     height: 20rem;
 }
 
+#recipe-categories-page-recipes a {
+    text-decoration: none;
+    color: black;
+}
+
 #recipe-categories-page-text{
     background-color: white;
     width: 30rem;
@@ -609,6 +633,102 @@
     margin-top: 0.5rem;
 }
 
+
+/* RECIPE CATEGORIES DESCRIPTION PAGE */
+
+#recipe-categories-description-page-previous-next{
+    width: 100%;
+    height: 3rem;
+    background-color: #f5ce35;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#recipe-categories-description-page-previous-next h3{
+    display: flex;
+    align-items: center;
+}
+
+#recipe-categories-description-page-previous-icon{
+    margin-right: 0.5rem;
+}
+
+#recipe-categories-description-page-next-icon{
+    margin-left: 0.5rem;
+}
+
+#recipe-categories-description-page-container{
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+}
+
+#recipe-categories-description-page-container h2{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+#recipe-categories-description-page-container h4{
+    margin-bottom: 2rem;
+}
+
+#recipe-categories-description-page-container-icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+#recipe-categories-description-page-container-icons div{
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#recipe-categories-description-page-container-icons div:last-child{
+    width: 15rem;
+    padding:0 2rem;
+    background-color: #f5ce35;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#recipe-categories-description-page-container img{
+    width: 51rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+
+#recipe-categories-description-page-container p{
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+#recipe-categories-description-page-container h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#recipe-categories-description-page-reviews h3{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#recipe-categories-description-page-reviews-text{
+    border: 1px solid gainsboro;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
 
 
 
@@ -883,6 +1003,181 @@
 
 #about-page-about-team-food-logo-and-description p{
     margin-left: 1.5rem;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+
+
+#search-page{
+    width: 300%;
+}
+
+#search-page-i-want-to-make-container{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+#search-page-i-want-to-make-search-bar-and-text{
+    width: 66rem;
+}
+
+#search-page-i-want-to-make-search-bar-and-text h3{
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+#search-page-i-want-to-make-container input[type=search]{
+    width: 35rem;
+    height: 5rem;
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+
+#search-page-i-want-to-make-search-bar{
+    display: flex;
+    align-items: center;
+}
+
+#search-page-i-want-to-make-search-bar-search-icon{
+    font-size: 3rem;
+}
+
+#search-page-your-recent-searches{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+#saved-page-header{
+    width: 300%;
+}
+
+#saved-page-header h2{
+    font-size: 6rem;
+}
+
+#saved-page-recipes {
+    width: 300%;
+}
+
+#saved-page-recipes-my-boards{
+    width: 300%;
+}
+
+#saved-page-recipes-my-boards a{
+    font-size: 4rem;
+}
+
+#discover-recipes-card {
+    width: 43%;
+}
+
+#saved-page-recipes-plus-icon {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+#discover-recipes-card h3 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+#discover-recipes-card p {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#discover-recipes-card a {
+    font-size: 3rem;
+}
+
+#added-recipes-card {
+    background-color: white;
+    text-align: left;
+    width: 13.5rem;
+    height: 20.75rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    border-bottom: 4px solid aquamarine;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#added-recipes-card img:first-child {
+    width: 13.5rem;
+    height: 10rem;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+#added-recipes-card img:nth-child(2) {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 7.5rem;
+    left: 1rem;
+}
+
+#added-recipes-card h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+
+#added-recipes-card p {
+    margin-left: 1.5rem;
+}
+
+#saved-page-my-boards {
+    width: 300%;
+}
+
+#new-board-card {
+    width: 43%;
+}
+
+#saved-page-my-boards-plus-icon {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+#new-board-card h3 {
+    font-size: 4rem;
+    margin-bottom: 15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

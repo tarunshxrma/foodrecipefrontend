@@ -41,12 +41,14 @@ const RecipesCategoriesPage1 = () => {
                         {
                             data.map((element, index) => (
                                 <div id='recipe-categories-page-recipes' key={index}>
-                                    <img src={element.recipe.image} alt=''></img>
-                                    <div id='recipe-categories-page-text'>
-                                        <h5>RECIPE</h5>
-                                        <h2>{element.recipe.label}</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                    </div>
+                                    <Link to={`/recipedescription/${element.recipe.label}`} ><img src={element.recipe.image} alt=''></img></Link>
+                                    <Link to={`/recipedescription/${element.recipe.label}`} >
+                                        <div id='recipe-categories-page-text'>
+                                            <h5>RECIPE</h5>
+                                            <h2>{element.recipe.label}</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             ))
                         }

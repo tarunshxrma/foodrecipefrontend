@@ -30,7 +30,7 @@ const AddYourOwnRecipePage = () => {
 
     const handleSubmit = async () => {
         try {
-            await axios.post('https://food-recipe-backend-lctk.onrender.com/recipes/addyourownrecipe', {
+            await axios.post('http://localhost:8000/recipes/addyourownrecipe', {
                 recipeTitle, recipeDescription, recipeCategory, recipePrepTime, recipeCookTime, recipeServes, recipeIngredients, recipeDirections, recipeSaveRecipeAs,
                 // headers: {
                 //     'Authorization': "Bearer " + token

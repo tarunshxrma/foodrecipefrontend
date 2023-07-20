@@ -9,7 +9,7 @@ const FindMoreRecipes = () => {
                 <div id='find-more-recipes-container'>
                     <h2>FIND MORE RECIPES</h2>
                     <div id='find-more-recipes-search-bar'>
-                        <BsSearch />
+                        <BsSearch id='find-more-recipes-search-bar-search-icon' />
                         <input type='search' placeholder="I'm Craving..."></input>
                     </div>
                     <button>SEARCH</button>
