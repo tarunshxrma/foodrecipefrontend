@@ -26,8 +26,7 @@ const SavedPageRecipes = ({ recipe }) => {
         })
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
-        console.log(data)
-    }, [data])
+    }, [])
 
     useEffect(() => {
         setRECIPE(recipe)

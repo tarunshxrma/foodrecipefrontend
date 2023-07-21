@@ -5,6 +5,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import IWantToMakeSearch from '../MainComponents/IWantToMakeSearch'
 import Footer from '../MainComponents/Footer'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const SearchPage = () => {
 
@@ -32,7 +33,7 @@ const SearchPage = () => {
                             <div id='search-page-i-want-to-make-search-bar'>
                                 <AiOutlineSearch id='search-page-i-want-to-make-search-bar-search-icon' />
                                 <input type='search' value={search} onChange={(e) => setSearch(e.target.value)}></input>
-                                <button onClick={() => getSearchRecipes(search)}>search</button>
+                                <button onClick={() => getSearchRecipes(search)}>SEARCH</button>
                             </div>
                         </div>
                     </div>
@@ -41,15 +42,20 @@ const SearchPage = () => {
                     <p>YOUR RECENT SEARCHES</p>
                 </div>
             </div>
-            <div>
-                {
-                    data.map((element, index) => (
-                        <div>
-                            <img src={element.recipe.image} alt=''></img>
-                            <h3>{element.recipe.label}</h3>
-                        </div>
-                    ))
-                }
+            <div id='search-page-search-data'>
+                <h2>SEARCH RESULTS . . .</h2>
+                <div id='search-page-search-data-container'>
+                    <div id='search-page-search-data-cards-container'>
+                        {
+                            data.map((element, index) => (
+                                <div id='search-page-search-data-cards'>
+                                    <Link to={`/recipedescription/${element.recipe.label}`} ><img src={element.recipe.image} alt=''></img></Link>
+                                    <h3>{element.recipe.label}</h3>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
             <IWantToMakeSearch />
             <Footer />

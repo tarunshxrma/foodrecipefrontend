@@ -29,7 +29,7 @@ const IWantToMakeSearch = () => {
                                 <div id='i-want-to-make-search-bar'>
                                     <AiOutlineSearch />
                                     <input type='search' placeholder='Search here or try our suggestions below' value={search} onChange={(e) => setSearch(e.target.value)}></input>
-                                    <button onClick={() => getSearchRecipes(search)}>search</button>
+                                    <button onClick={() => getSearchRecipes(search)}>SEARCH</button>
                                 </div>
                             </div>
                         </div>
@@ -46,15 +46,20 @@ const IWantToMakeSearch = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                {
-                    data.map((element, index) => (
-                        <div>
-                            <img src={element.recipe.image} alt=''></img>
-                            <h3>{element.recipe.label}</h3>
-                        </div>
-                    ))
-                }
+            <div id='i-want-to-make-search-search-data'>
+                <h2>SEARCH RESULTS . . .</h2>
+                <div id='i-want-to-make-search-search-data-container'>
+                    <div id='i-want-to-make-search-search-data-cards-container'>
+                        {
+                            data.map((element, index) => (
+                                <div id='i-want-to-make-search-search-data-cards'>
+                                    <Link to={`/recipedescription/${element.recipe.label}`} ><img src={element.recipe.image} alt=''></img></Link>
+                                    <h3>{element.recipe.label}</h3>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
         </>
     )

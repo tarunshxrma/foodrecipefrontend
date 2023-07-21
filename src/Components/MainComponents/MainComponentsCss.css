@@ -709,10 +709,10 @@ h1{
 }
 
 #i-want-to-make-search-bar-and-text-container{
-    width: 69%;
+    width: 87%;
     background-color: white;
-    padding: 0.8rem;
-    margin-left: 7.6rem;
+    padding: 1rem;
+    margin-left: 4rem;
 }
 
 #i-want-to-make-search-bar-and-text{
@@ -741,6 +741,19 @@ h1{
     font-weight: 900;
 }
 
+#i-want-to-make-search-bar button{
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #f5ce35;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+}
+
 #i-want-to-make-suggested{
     display: flex;
     justify-content: center;
@@ -766,6 +779,44 @@ h1{
     text-decoration: none;
     color: black;
     font-weight: 900;
+}
+
+#i-want-to-make-search-search-data {
+    margin-top: 3rem;
+}
+
+#i-want-to-make-search-search-data h2 {
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+
+#i-want-to-make-search-search-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#i-want-to-make-search-search-data-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+    width: 70%;
+}
+
+#i-want-to-make-search-search-data-cards {
+    width: 17rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#i-want-to-make-search-search-data-cards img {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -819,6 +870,43 @@ h1{
     border-radius: 0.2rem;
 }
 
+#find-more-recipes-search-data{
+    margin-top: 3rem;
+}
+
+#find-more-recipes-search-data h2{
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+
+#find-more-recipes-search-data-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#find-more-recipes-search-data-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+    width: 70%;
+}
+
+#find-more-recipes-search-data-cards{
+    width: 17rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#find-more-recipes-search-data-cards img{
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -1218,6 +1306,43 @@ h1 {
     margin-bottom: 3rem;
 }
 
+#find-more-recipes-search-data {
+    margin-top: 3rem;
+    width: 300%;
+}
+
+#find-more-recipes-search-data h2 {
+    font-size: 4rem;
+}
+
+#find-more-recipes-search-data-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+    width: 100%;
+}
+
+#find-more-recipes-search-data-cards {
+    width: 67rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 2rem;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+
+#find-more-recipes-search-data-cards img {
+    width: 63rem;
+    height: 50rem;
+    margin-bottom: 1rem;
+}
+
+#find-more-recipes-search-data-cards h3 {
+    font-size: 4rem;
+}
+
 #footer {
     width: 300%;
     flex-direction: column;
@@ -1291,7 +1416,7 @@ h1 {
 #i-want-to-make-search-bar input[type=search] {
     width: 30rem;
     height: 5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #i-want-to-make-suggested {
@@ -1313,6 +1438,43 @@ h1 {
 
 #i-want-to-make-suggested-container div a {
     font-size: 2rem;
+}
+
+#i-want-to-make-search-search-data {
+    margin-top: 3rem;
+    width: 300%;
+}
+
+#i-want-to-make-search-search-data h2 {
+    font-size: 4rem;
+}
+
+#i-want-to-make-search-search-data-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+    width: 100%;
+}
+
+#i-want-to-make-search-search-data-cards {
+    width: 67rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 2rem;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+
+#i-want-to-make-search-search-data-cards img {
+    width: 63rem;
+    height: 50rem;
+    margin-bottom: 1rem;
+}
+
+#i-want-to-make-search-search-data-cards h3{
+    font-size: 4rem;
 }
 
 .navbar-login-register-close-btn {
