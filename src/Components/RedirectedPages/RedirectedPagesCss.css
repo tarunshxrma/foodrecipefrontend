@@ -1113,6 +1113,12 @@
     font-size: 3rem;
 }
 
+#search-page-i-want-to-make-search-bar button {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
 #search-page-your-recent-searches{
     color: white;
     font-size: 2.5rem;

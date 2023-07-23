@@ -98,7 +98,9 @@ h1{
     filter: invert(40%);
 }
 
-
+.drop{
+    display: none;
+}
 
 
 /* NAVBAR PROFILE ICON AFTER LOGIN CSS */
@@ -965,20 +967,6 @@ h1 {
     width: 6rem;
 }
 
-#nav-links-mobile {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    position: absolute;
-    top: 15rem;
-    background-color: #000000;
-    width: 77.2rem;
-    height: 160rem;
-    z-index: 2;
-    text-align: center;
-    font-size: 4rem;
-}
-
 #mobile-menu-icon {
     display: flex;
     font-size: 8rem;
@@ -991,8 +979,40 @@ h1 {
 }
 
 .navbar-recipes-categories-dropdown{
-    padding: 7rem;
+    display: none;
+}
+
+#dropdown2{
+    display: block;
+    background-color: #000000;
+    width: 300%;
+    height: 1300%;
+    padding: 2rem;
+    position: absolute;
+    z-index: 10;
+}
+
+#dropdown2 button{
+    font-size: 5rem;
+    border: none;
+    background-color: #000000;
+    color: white;
+    padding: 2rem;
+    margin: 10rem 3rem;
     border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 4.5rem;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: white;
 }
 
 #home-page {
@@ -1040,7 +1060,7 @@ h1 {
 }
 
 .home-page-fresh-from-our-community-cards {
-    width: 63rem;
+    width: 64.5rem;
     height: 50rem;
     border: 5px solid rgb(228, 228, 228);
     padding: 3rem;
@@ -1165,12 +1185,12 @@ h1 {
 }
 
 #home-page-trending-now-container img {
-    width: 63rem;
+    width: 64.5rem;
     margin-bottom: 1rem;
 }
 
 #home-page-trending-now-container div {
-    width: 63rem;
+    width: 64.5rem;
     font-size: 4rem;
 }
 
@@ -1218,12 +1238,12 @@ h1 {
 }
 
 #home-page-more-ideas-container img {
-    width: 63rem;
+    width: 64.5rem;
     margin-bottom: 1rem;
 }
 
 #home-page-more-ideas-container div {
-    width: 63rem;
+    width: 64.5rem;
     font-size: 4rem;
 }
 
@@ -1262,12 +1282,12 @@ h1 {
 }
 
 #home-page-fan-favourites-container img {
-    width: 63rem;
+    width: 64.5rem;
     margin-bottom: 1rem;
 }
 
 #home-page-fan-favourites-container div {
-    width: 63rem;
+    width: 64.5rem;
     font-size: 4rem;
 }
 
@@ -1416,7 +1436,13 @@ h1 {
 #i-want-to-make-search-bar input[type=search] {
     width: 30rem;
     height: 5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+#i-want-to-make-search-bar button {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.5rem;
 }
 
 #i-want-to-make-suggested {
